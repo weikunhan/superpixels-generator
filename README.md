@@ -10,11 +10,17 @@ for multi nodes.
 
 As explained by David Stutz (2017), "Superpixel group perceptually similar pixels to create visually meaningful entities while heavily reducing the number of primitives for subsequent processing steps. As of these properties, superpixel algorithms have received much attention since their naming in 2003. By today, publicly available superpixel algorithms have turned into standard tools in low-level vision." [1](https://arxiv.org/abs/1612.01601)
 
+## Requirements
+
+```
+pip install -r requirements.txt
+```
+
 ## Configuration
 
 By using factory design pattern, you can configure your method in file [config_superpixel.json](./config_superpixel.json).
 
-## Usages
+## Usage
 
 ```
 usage: superpixel.py [-h] -i INPUT -o OUTPUT -m METHOD [--config]
