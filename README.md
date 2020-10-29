@@ -2,13 +2,11 @@
 
 The superpixel generator for the support image format.
 
-The fast way to generate superpixel with target images. It default run 
-multiprocessing for the single node. Also, it supports distributed multiprocessing 
-for multi nodes.
+The fast way to generate superpixel with target images. It defaults run multiprocessing for the single node. Also, it supports distributed multiprocessing for multi nodes. If using distributed multiprocessing for multi nodes, the script will automatically avoid generating duplicate superpixels. Therefore, it is safe to open one node run the following code, and open another node to run the same argument if using the same config. By the way, the superpixel will save as the .png format. 
 
 ## Introduction
 
-As explained by David Stutz (2017), "Superpixel group perceptually similar pixels to create visually meaningful entities while heavily reducing the number of primitives for subsequent processing steps. As of these properties, superpixel algorithms have received much attention since their naming in 2003. By today, publicly available superpixel algorithms have turned into standard tools in low-level vision." [1](https://arxiv.org/abs/1612.01601)
+As explained by David Stutz, "Superpixel group perceptually similar pixels to create visually meaningful entities while heavily reducing the number of primitives for subsequent processing steps. As of these properties, superpixel algorithms have received much attention since their naming in 2003. By today, publicly available superpixel algorithms have turned into standard tools in low-level vision." [David Stutz et al., "Superpixels: An Evaluation of the State-of-the-Art", CVPR (2017)](https://arxiv.org/abs/1612.01601)
 
 ## Requirements
 
