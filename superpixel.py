@@ -1,8 +1,13 @@
 """The superpixel generator for the support image format
 
-The fast way to generate superpixel with target images. It default run 
-multiprocessing for the single node. Also, it supports distributed multiprocessing 
-for multi nodes.
+The fast way to generate superpixel with target images. 
+It defaults run multiprocessing for the single node. 
+Also, it supports distributed multiprocessing for multi nodes. 
+If using distributed multiprocessing for multi nodes, 
+the script will automatically avoid generating duplicate superpixels. 
+Therefore, it is safe to open one node run the following code, 
+and open another node to run the same argument if using the same config. 
+By the way, the superpixel will save as the .png format.
 
 Author: Weikun Han <weikunhan@gmail.com>
 
